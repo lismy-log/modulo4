@@ -1,37 +1,41 @@
-@green:#00b8e66b;
+@yellow:#F8B12B;
 
-@mixin margenes ($top, $bottom){
-    margin-top: $top;
-    margin-bottom: $bottom;
+.margenes (@top:0px, @bottom:0px){
+  margin-top: @top;
+  margin-bottom: @bottom;
+}
+
+.jumbotron {
+    background-color: @yellow;
+    .margenes(10px, 0px);
+  }
+  
+  footer {
+    background-color: @yellow;
+    .margenes(10px, 0px);
+   }
+  
+  .card-service {
+    .margenes(10px, 0px);
+   }
+  
+  .breadcrumb {
+    .margenes(10px, 0px);
+  }
+  
+  .btn {
+    .margenes(10px, 0px); 
+  }
+  
+  .tab-content {
+    .margenes(10px, 0px); 
+  }
+  
+  .table-responsive {
+    .margenes(10px, 0px);
+  }
     
-}
-
-.jumbotron{
-    background-color: $green;
-    @include margenes(50px, 10px )
-}
-
-footer {
-    background-color: $green;
-}
-
-.card-service {
-    @include margenes(10px, 0px )
-}
-
-.breadcrumb {
-    @include margenes(50px, 0px )
-}
-.btn {
-
-    @include margenes(10px, 0px )
-}
-
-
-.tab-content {
-    @include margenes(10px, 0px )
-}
-
-.table-responsive {
-    @include margenes(10px, 0px )
-}
+    .MoreInfo {
+        background-color: @yellow;
+        .margenes(10px, 0px);
+    }
