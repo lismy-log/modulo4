@@ -1,0 +1,26 @@
+{
+  "name": "modulo4",
+  "version": "1.0.0",
+  "description": "modulo4 en accion",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lismy-log/modulo4.git"
+  },
+  "author": "LizehtOrtiz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lismy-log/modulo4/issues"
+  },
+  "homepage": "https://github.com/lismy-log/modulo4#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "lite-server": "^2.6.1",
+    "popper.js": "^1.16.1"
+  }
+}
