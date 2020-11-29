@@ -6,8 +6,14 @@
   "scripts": {
     "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -o css/ css/"
-  },
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss ",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin nosotros.html -d dist --htmlmin -o dist/nosotros.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin proyectos.html -d dist --htmlmin -o dist/proyectos.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
+  
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lismy-log/modulo4.git"
@@ -25,6 +31,12 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   }
 }

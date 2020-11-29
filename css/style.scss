@@ -1,4 +1,4 @@
-$red:#cf413c;
+$yellow:#eeea10;
 
 @mixin margenes ($top, $bottom){
     margin-top: $top;
@@ -7,12 +7,12 @@ $red:#cf413c;
 }
 
 .jumbotron{
-    background-color: $red;
+    background-color: $yellow;
     @include margenes(50px, 10px )
 }
 
 footer {
-    background-color: $green;
+    background-color: $yellow;
 }
 
 .card-service {
@@ -27,7 +27,6 @@ footer {
     @include margenes(10px, 0px )
 }
 
-
 .tab-content {
     @include margenes(10px, 0px )
 }
@@ -37,5 +36,5 @@ footer {
 }
 
 .MoreInfo {
-    background-color:$red;
+    background-color:$yellow;
 }
